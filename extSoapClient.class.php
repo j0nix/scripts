@@ -1,6 +1,11 @@
 /*
 Connecting to a soap api on a custom port. Perhaps solved in later versions of php?
 Tested on a CentOS installation with php 5.3.3 
+Ex)
+$client = new extSoapClient("https://server:3000/soapcrap?wsdl", array(
+        'default_options' => array('trace' => true,'exceptions' => true,'cache_wsdl' => WSDL_CACHE_DISK),
+        'default_server_options' => array('cache_wsdl' => WSDL_CACHE_DISK))
+);
 */
 
 <?php
